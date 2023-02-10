@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net_Core_y_Angular_Un_Proyecto", "Net_Core_y_Angular_Un_Proyecto\Net_Core_y_Angular_Un_Proyecto.csproj", "{136A1E87-A209-422E-A428-CEA73CB1610D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{136A1E87-A209-422E-A428-CEA73CB1610D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136A1E87-A209-422E-A428-CEA73CB1610D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136A1E87-A209-422E-A428-CEA73CB1610D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136A1E87-A209-422E-A428-CEA73CB1610D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17F3F21C-6D64-4FA4-825F-3A7999B585EF}
+	EndGlobalSection
+EndGlobal
