@@ -27,7 +27,7 @@ namespace Net_Core_y_Angular_Un_Proyecto.Modelos
             {
                 IConfiguration configuration = new ConfigurationBuilder()
                 .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                .AddJsonFile("appsetting.json")
+                .AddJsonFile("appsettings.json")
                 .Build();
                 optionsBuilder.UseSqlServer(configuration.GetConnectionString("SQL"));
             }
