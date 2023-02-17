@@ -106,6 +106,36 @@ namespace Net_Core_y_Angular_Un_Proyecto.Controllers
             }
             return Ok(res);
         }
+
+        /// <summary>
+        /// Borramos un cliente
+        /// </summary>
+        /// <param name="Email">Email del cliente que vamos a borrar</param>
+        /// <returns></returns>
+        [HttpDelete("{Email}")]
+        public IActionResult BorrarCliente(String Email)
+        {
+            Resultado res = new Resultado();
+            try
+            {
+                using (CursoAngularNetCoreContext basedatos = new CursoAngularNetCoreContext())
+                {
+                    //Obtenemos el cliente por su email
+                    Cliente cliente = basedatos.Clientes.Single(x => x.Email == Email);
+                    //Borramos un cliente
+                    basedatos.Remove(cliente);
+                    //Confirmamos cambios
+                    basedatos.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                res.Error = "Se produjo un error al borrar un cliente" + ex.Message;
+            }
+            return Ok(res);
+        }
+
     }
 
 
